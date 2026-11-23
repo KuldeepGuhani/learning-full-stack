@@ -46,7 +46,7 @@ public class Orders {
         return "Orders{" +
                 "id=" + id +
                 ", company='" + company + '\'' +
-                ", address='" + address + '\'' +
+                ", addfffress='" + address + '\'' +
                 '}';
     }
 }
