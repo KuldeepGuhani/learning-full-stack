@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: Learning-Full-Stack
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/testdb
+    username: test_user
+    password: test_kd
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+server:
+  port: 9001
+
