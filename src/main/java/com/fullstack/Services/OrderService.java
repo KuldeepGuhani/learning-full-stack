@@ -8,19 +8,18 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class OrderService
-{
+public class OrderService {
     private final OrderRepository orderRepository;
 
     public OrderService(OrderRepository orderRepository) {
         this.orderRepository = orderRepository;
     }
 
-    public Orders createOrder(Orders order){
+    public Orders createOrder(Orders order) {
         return orderRepository.save(order);
     }
 
-    public List<Orders> getAll(){
+    public List<Orders> getAll() {
         return orderRepository.findAll();
     }
 }
